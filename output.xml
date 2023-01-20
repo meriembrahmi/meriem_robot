@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20230120 16:55:55.206" rpa="false" schemaversion="3">
+<suite id="s1" name="Keywords Avec Return Argument" source="d:\Session-4-\Automatisation II\Projets\robot_keywords_project\test_cases\keywords_avec_return_argument.robot">
+<test id="s1-t1" name="Login Test" line="11">
+<kw name="lancer le navigateur">
+<var>${RECUP_TITRE}</var>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL1}</arg>
+<arg>${BROWSER1}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230120 16:55:55.343" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20230120 16:55:55.342" endtime="20230120 16:55:57.825"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230120 16:55:57.825" endtime="20230120 16:55:57.945"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${TITRe}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230120 16:55:57.950" level="INFO">${TITRe} = Your store. Login</msg>
+<status status="PASS" starttime="20230120 16:55:57.945" endtime="20230120 16:55:57.951"/>
+</kw>
+<return>
+<value>${TITRE}</value>
+<status status="PASS" starttime="20230120 16:55:57.951" endtime="20230120 16:55:57.951"/>
+</return>
+<msg timestamp="20230120 16:55:57.951" level="INFO">${RECUP_TITRE} = Your store. Login</msg>
+<status status="PASS" starttime="20230120 16:55:55.342" endtime="20230120 16:55:57.951"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${RECUP_TITRE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230120 16:55:57.952" endtime="20230120 16:55:57.952"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>admin@yourstore.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230120 16:55:57.953" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20230120 16:55:57.952" endtime="20230120 16:55:58.019"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>admin</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230120 16:55:58.021" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20230120 16:55:58.053" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230120 16:55:58.078" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230120 16:55:58.020" endtime="20230120 16:55:58.078"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230120 16:55:58.080" level="INFO">Clicking button 'xpath://button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20230120 16:55:58.079" endtime="20230120 16:55:59.987"/>
+</kw>
+<status status="PASS" starttime="20230120 16:55:55.341" endtime="20230120 16:55:59.988"/>
+</test>
+<status status="PASS" starttime="20230120 16:55:55.209" endtime="20230120 16:55:59.989"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Keywords Avec Return Argument">Keywords Avec Return Argument</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
